@@ -1,23 +1,41 @@
+nav{
+font-family: 'Raleway';
+}
+
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway';
   background-color: white;
-  margin:auto;
-  padding: 0px;
+  text-align: center;
 }
 
-.imgnav{
-  height: 25px;
+.card-img-top{
+  height: 180px;
   width: 86px;
-  display: block;
 }
 
-li{
-  text-align: inherit;
+h2{
+  padding: 40px;
+  padding-top: 50px;
 }
 
-.rounded{
-  height: 25px;
-  width: 86px;
-  display: block;
-  margin:auto;
-  }
+.card{
+  margin-left: 35px;
+  margin-right: 30px;
+
+}
+
+.col-sm{
+margin: 40px;
+}
+
+.d-block{
+  height: 600px;
+}
+
+.icon{
+  height: 30px;
+  width: 30px;
+}
+footer{
+  padding: 50px;
+}
