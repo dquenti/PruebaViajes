@@ -1,0 +1,23 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  margin:auto;
+  padding: 0px;
+}
+
+.imgnav{
+  height: 25px;
+  width: 86px;
+  display: block;
+}
+
+li{
+  text-align: inherit;
+}
+
+.rounded{
+  height: 25px;
+  width: 86px;
+  display: block;
+  margin:auto;
+  }
