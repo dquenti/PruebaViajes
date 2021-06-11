@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
 
+  <head>
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,11 +15,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>PrebaViajes</title>
-
   </head>
 
   <body class="body1" style="background-color:black;">
 
+<!-- Barra de navegación con tooltip -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
           <img src="assets/img/viajes.svg" class="icon" alt="Img.">
@@ -28,96 +28,107 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
              <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                   <a class="nav-link" href="#">Inicio</a>
+                   <a class="nav-link" href="#inicio"><button type="button" class="btn bg-transparent" data-toggle="tooltip" data-placement="bottom" title="Mantengase al inicio">Inicio</button></a>
                 </li>
                 <li class="nav-item">
-                   <a class="nav-link" href="#">Quiénes Somos</a>
+                   <a class="nav-link" href="#quienessomos"><button type="button" class="btn bg-transparent" data-toggle="tooltip" data-placement="bottom" title="Conózcanos">¿Quiénes Somos?</button></a></a>
                 </li>
                 <li class="nav-item">
-                   <a class="nav-link" href="#">Destacados</a>
+                   <a class="nav-link" href="#destacados"><button type="button" class="btn bg-transparent" data-toggle="tooltip" data-placement="bottom" title="Lo mejor en viajes">Destacados</button></a></a>
                 </li>
                 <li class="nav-item">
-                   <a class="nav-link" href="#">Contacto</a>
+                   <a class="nav-link" href="#contacto"><button type="button" class="btn bg-transparent" data-toggle="tooltip" data-placement="bottom" title="¡Contáctenos ahora!">Contacto</button></a></a>
                 </li>
              </ul>
           </div>
-       </div>
+        </div>
       </nav>
 
- <div class="carousel1">
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Imagen de animales curiosos.">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Imagen de animales curiosos.">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Imagen de animales curiosos.">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+<!-- Carrusel -->
+<section id="inicio">
+  <div class="carousel1">
+     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Imagen de animales curiosos.">
+           </div>
+           <div class="carousel-item">
+             <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Imagen de animales curiosos.">
+           </div>
+           <div class="carousel-item">
+             <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Imagen de animales curiosos.">
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
+   </div>
+</section>
+
+<!-- Enunciado de la sección -->
+ <section id="quienessomos">
+  <div class="container-fluid">
+    <div class="wrapper" style="color:white;">
+      <h2>¿Quiénes Somos?<hr style="color:#159ac8; height:5px; opacity:0.9;"/></h2>
+    </div>
   </div>
+ </section>
 
+<!-- Sección texto descriptivo con icons -->
+ <section>
+  <div class="row">
+    <div class="col-sm" style="color:white;">
+     <p class="paraf" style="background-color:#159ac8"><i class="fas fa-plane" style="background-color:#159ac8"></i></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+         officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col-sm" style="color:white;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+         officia deserunt mollit anim id est laborum.</p>
+          <p class="paraf" style="background-color:#159ac8"><i class="fas fa-mountain" style="background-color:#159ac8"></i></p>
+    </div>
+    <div class="col-sm" style="color:white;">
+      <p class="paraf" style="background-color:#159ac8"><i class="fas fa-route" style="background-color:#159ac8"></i></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+         nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+         reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+         officia deserunt mollit anim id est laborum.</p>
+    </div>
+   </div>
+ </section>
 
-      <div class="container-fluid">
-        <div class="wrapper" style="color:white;">
-          <h2>¿Quiénes Somos?<hr style="color:#159ac8; height:5px; opacity:0.9;"/></h2>
-        </div>
-      </div>
+<!-- Encabezado de la siguiente sección -->
+ <section id="destacados">
+  <div class="container-fluid">
+    <div class="wrapper" style="color:white;">
+      <h2>Destacados<hr style="color:#159ac8; height:5px; opacity:0.9;"/></h2>
+    </div>
+  </div>
+ </section>
 
-     <div class="row">
-       <div class="col-sm" style="color:white;">
-        <p class="paraf" style="background-color:#159ac8"><i class="fas fa-plane" style="background-color:#159ac8"></i></p>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.</p>
-       </div>
-       <div class="col-sm" style="color:white;">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.</p>
-             <p class="paraf" style="background-color:#159ac8"><i class="fas fa-mountain" style="background-color:#159ac8"></i></p>
-       </div>
-       <div class="col-sm" style="color:white;">
-         <p class="paraf" style="background-color:#159ac8"><i class="fas fa-route" style="background-color:#159ac8"></i></p>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum.</p>
-       </div>
-     </div>
-
-     <div class="container-fluid">
-       <div class="wrapper" style="color:white;">
-         <h2>Destacados<hr style="color:#159ac8; height:5px; opacity:0.9;"/></h2>
-       </div>
-     </div>
-
-
+<!-- Sección con cards -->
      <div class="row row-cols-1 row-cols-md-4">
        <div class="col mb-4">
          <div class="card" style="background-color:#159ac8">
@@ -157,36 +168,34 @@
        </div>
      </div>
 
+<!-- Enunciado de la sección contacto -->
+ <section id="contacto">
+  <div class="container-fluid">
+    <div class="wrapper" style="color:white;">
+      <h2>Contacto<hr style="color:#159ac8; height:5px; opacity:0.9;"/></h2>
+    </div>
+  </div>
+ </section>
 
-
-     <div class="container-fluid">
-       <div class="wrapper" style="color:white;">
-         <h2>Contacto<hr style="color:#159ac8; height:5px; opacity:0.9;"/></h2>
-       </div>
-     </div>
-
-
-<section>
+<!-- Formulario TypeForm -->
+  <section>
     <div class="typeform-widget" data-url="https://form.typeform.com/to/NMXeTSDu?typeform-medium=embed-snippet" style="width: 100%;
     height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName,
       id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js";
       q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-</section>
+  </section>
 
 
+<!-- Footer -->
+  <footer class="bg-light text-center text-dark p-3" style="color:#159ac8">
+    <div class="fot" style="color:white; background-color:#159ac8">
+        <h4>VIAJES CHILE<i class="fab fa-github-square"></i><i class="fab fa-linkedin"></i><i class="fab fa-twitter-square"></i><i class="fab fa-facebook-square"></i></h4>
+    </div>
+  </footer>
 
-    <footer class="bg-light text-center text-dark p-3">
-      <div class="fot" style="color:white; background-color:#159ac8">
-         <h4>VIAJES CHILE<i class="fab fa-github-square"></i><i class="fab fa-linkedin"></i><i class="fab fa-twitter-square"></i><i class="fab fa-facebook-square"></i></h4>
-      </div>
-    </footer>
-
-
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-      <script src="assets/js/script.js"></script>
+<!-- Js Boostrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 
   </body>
